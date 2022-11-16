@@ -11,11 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      // KRS.belongsTo(models.MataKuliah,{foreignKey:"matkulId"})
+      KRS.belongsTo(models.Mahasiswa)
       KRS.belongsTo(models.MataKuliah)
     }
   }
   KRS.init({
-    matkulId: DataTypes.INTEGER
+    MataKuliahId: DataTypes.INTEGER,
+    MahasiswaId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'KRS',

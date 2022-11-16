@@ -10,17 +10,17 @@
       }
     ],
     "matkul": [
-      { "name": "Database",
-        "mhsId":1
+      { "name": "Database"
+       
     },
-      { "name": "Logika Pemograman",
-        "mhsId":2
+      { "name": "Logika Pemograman"
+      
     }
       
     ],
     "krs": [
-      { "matkulId": 1 },
-      { "matkulId": 2 }
+      { "MataKuliahId": 1,"MahasiswaId":1 },
+      { "MataKuliahId": 2,"MahasiswaId":2 }     
     ]
      }
  

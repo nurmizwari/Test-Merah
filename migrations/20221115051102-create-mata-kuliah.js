@@ -12,15 +12,7 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      mhsId: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: "Mahasiswas",
-          key: "id",
-        },
-        onUpdate: "cascade",
-        onDelete: "cascade",
-      },
+      
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

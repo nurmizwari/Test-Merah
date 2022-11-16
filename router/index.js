@@ -17,6 +17,9 @@ router.delete("/matakuliah/:id",MataKuliahAja.deleteMatkul)
 
 
 router.get("/krs",KrsController.getKRS)
+router.post("/krs",KrsController.addKRS)
+router.put("/krs/:id",KrsController.editKRS)
+router.delete("/krs/:id",KrsController.deleteKRS)
 
 
 module.exports = router;

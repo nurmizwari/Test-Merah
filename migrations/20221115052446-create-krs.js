@@ -2,18 +2,27 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('KRs', {
+    await queryInterface.createTable('KRS', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      matkulId: {
+      MataKuliahId: {
         type: Sequelize.INTEGER,
         references: {
           model: "MataKuliahs",
-          key: "id",
+          
+        },
+        onUpdate: "cascade",
+        onDelete: "cascade",
+      },
+      MahasiswaId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Mahasiswas",
+         
         },
         onUpdate: "cascade",
         onDelete: "cascade",
@@ -29,6 +38,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('KRs');
+    await queryInterface.dropTable('KRS');
   }
 };

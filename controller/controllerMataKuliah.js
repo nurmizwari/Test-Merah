@@ -5,7 +5,7 @@ const { MataKuliah,KRS } = require("../models");
 class MataKuliahAja {
      static async getMataKuliah (req,res){
         try {
-            let data = await MataKuliah.findAll({include:KRS})
+            let data = await MataKuliah.findAll()
             console.log(data)
             res.status(200).json(data)
         } catch (error) {

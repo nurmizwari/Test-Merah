@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   MataKuliah.init({
     name: DataTypes.STRING,
-    mhsId: DataTypes.INTEGER
+   
   }, {
     sequelize,
     modelName: 'MataKuliah',

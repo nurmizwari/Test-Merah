@@ -1,8 +1,8 @@
-const {Mahasiswa} = require("../models")
+const {Mahasiswa,KRS} = require("../models")
 class MahasiswaController {
     static async getMahasiswa (req,res){
         try {
-            let data = await Mahasiswa.findAll()
+            let data = await Mahasiswa.findAll({include:KRS})
             res.status(200).json(data)
         } catch (error) {
             console.log(error);
