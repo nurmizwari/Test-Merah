@@ -1,0 +1,26 @@
+{
+    "mahasiswa": [
+      {
+        "name": "nur mizwari"
+       
+      },
+      {
+        "name": "Samsul bahri"
+       
+      }
+    ],
+    "matkul": [
+      { "name": "Database",
+        "mhsId":1
+    },
+      { "name": "Logika Pemograman",
+        "mhsId":2
+    }
+      
+    ],
+    "krs": [
+      { "matkulId": 1 },
+      { "matkulId": 2 }
+    ]
+     }
+ 

@@ -1,0 +1,29 @@
+{
+  "name": "Test-Merah",
+  "version": "1.0.0",
+  "description": "test-merah",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.25.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurmizwari/Test-Merah.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurmizwari/Test-Merah/issues"
+  },
+  "homepage": "https://github.com/nurmizwari/Test-Merah#readme"
+}
